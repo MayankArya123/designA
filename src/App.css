@@ -1,131 +1,122 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
 }
 
-
-
 /* global styling */
 
+
+.welcome-heading{
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
 
 .medium-bold {
   font-weight: 600;
 }
-
 
 .medium {
   font-weight: 500;
   font-size: 0.9rem;
 }
 
+.normal{
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 
-.validation-error-message{
+.validation-error-message {
   background: red;
   color: white;
   padding: 0em 0.4em;
   border-radius: 5px;
 }
 
-
-.prev ,.next{
+.prev,
+.next {
   cursor: pointer;
-  width: 2.6rem;  
-  height: 2.6rem;
+  width: 2.7rem;
+  height: 2.7rem;
   border-radius: 50%;
   border: 1.6px solid lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-a{
+a {
   text-decoration: none !important;
 }
 
-
-
-
-
 /* global styling  end*/
 
-
-.checkbox{
-height: 0.8rem;
-width: 0.8rem;
+.checkbox {
+  height: 0.8rem;
+  width: 0.8rem;
 }
-
 
 .main-wrapper {
   display: flex;
 }
 
-.main-wrapper .first-half{
+.main-wrapper .first-half {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
 
-.main-wrapper .first-half .form{
+.main-wrapper .first-half .form {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-
-.form p{
-
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+.form p {
+  margin-top: 0rem;
+  margin-bottom: 1.3rem;
 }
 
 .form button {
   border-radius: 10px;
-  padding: 0.3em 0.2em;
+  padding: 0.2em 0.2em;
 }
 
-
-.remember-text{
+.remember-text {
   margin-left: 0.4rem;
 }
 
 .form input {
   border-radius: 8px;
-  margin-top: 0.3em;
-  margin-bottom: 1rem;
-  padding: 0.3em 0.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5rem;
+  padding: 0.2em 0.6em;
   border: 1px solid gray;
 }
 
-.main-wrapper .second-half{
-   background:lightcyan;
-   position: relative;
-   width: 50%;
+.main-wrapper .second-half {
+  background: lightcyan;
+  position: relative;
+  width: 50%;
 }
 
-
-
-.sign-in-button{
+.sign-in-button {
   background: #000;
   color: white;
   border: transparent;
   margin-bottom: 0.8em;
+  margin-top: 0.4em;
 }
 
-
-.sign-in-google-button{
+.sign-in-google-button {
   color: black;
   border: transparent;
   border: 1px solid gray;
 }
 
-
-
-
-.image-card{
+.image-card {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   width: 90%;
   left: 0;
   right: 0;
@@ -134,26 +125,30 @@ width: 0.8rem;
   padding: 1rem 2rem;
 }
 
-
-.image-box{
+.image-box {
   width: 100%;
   height: 100%;
-  background:url('./Images/libraryImage.jpg');
-  background-size:100% 100% ;
+  background: url("./Images/libraryImage.jpg");
+  background-size: 100% 100%;
 }
 
-.image-box h5{
-  font-size: 1.7rem;
+.image-card-h2{
+  font-size: 1.62rem;
 }
 
-.image-box .image-footer-2nd-layer .signs{
+.image-box h5 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 0.1rem;
+}
+
+.image-box .image-footer-2nd-layer .signs {
   width: 7rem;
   height: 3rem;
-
+  margin-bottom: 0.2em;
 }
 
-
-.google-icon{
+.google-icon {
   margin-right: 1rem;
   font-size: 1.2rem;
 }
@@ -162,79 +157,55 @@ width: 0.8rem;
   cursor: pointer;
 }
 
-.stars{
+.stars {
   display: flex;
 
-  width: 8rem;
+  width: 7rem;
   height: 2.5rem;
   justify-content: space-evenly;
-  transform: translateY(-10px);
-
+  transform: translate(18px,-10px);
 }
 
-
-.star{
+.star {
   color: green;
   font-size: 1.1rem;
 }
 
-.image-paragraph{
+.image-paragraph {
   margin-bottom: 0.1em;
   font-size: 0.9rem;
 }
 
+.links-block{
+  margin: 0.2rem 0;
+}
 
 
-
-
-
-
-
-
-
-@media screen and (max-width:768px){
-
-
-  .main-wrapper .first-half{
-    width: 100%;
-
+@media screen and (max-width: 768px) {
+  .main-wrapper .first-half {
+      width: 100%;
   }
 
   .main-wrapper .first-half .form {
-  width: 80%;
-  margin: auto;
-}
-
-  .main-wrapper .second-half{
-    display: none;
+      width: 80%;
+      margin: auto;
   }
 
-
-
-  
+  .main-wrapper .second-half {
+      display: none;
+  }
 }
-@media screen and (max-width:425px){
-
-
-  .main-wrapper .first-half{
-    width: 100%;
-
+@media screen and (max-width: 425px) {
+  .main-wrapper .first-half {
+      width: 100%;
   }
 
   .main-wrapper .first-half .form {
-  width: 90%;
-  margin: auto;
-}
-
-  .main-wrapper .second-half{
-    display: none;
+      width: 90%;
+      margin: auto;
   }
 
-
-
-  
+  .main-wrapper .second-half {
+      display: none;
+  }
 }
-
-
-
-

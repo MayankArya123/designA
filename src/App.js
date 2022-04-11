@@ -1,6 +1,6 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { FaGoogle, FaStar } from "react-icons/fa";
+import { FaGoogle, FaStar,FaArrowLeft,FaArrowRight } from "react-icons/fa";
 
 import { useState } from "react";
 
@@ -30,9 +30,9 @@ function App() {
               <p className="validation-error-message"> {ValidationError} </p>
             )}
 
-            <h2>Welcome back</h2>
+            <h2 className="welcome-heading" >Welcome back</h2>
 
-            <p>welcome back! Please enter your details</p>
+            <p className="para" >welcome back! Please enter your details</p>
 
             <label htmlFor="" className="medium">
               Email
@@ -40,7 +40,7 @@ function App() {
             <input
               onChange={(e) => setEmail(e.target.value)}
               type="text"
-              placeholder="Enter your mail"
+              placeholder="Enter your email"
             />
 
             <label htmlFor="" className="medium">
@@ -48,7 +48,7 @@ function App() {
             </label>
             <input onChange={(e) => setPassword(e.target.value)} type="text" />
 
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between links-block">
               <div className="remember-block d-flex">
                 {" "}
                 <input className="checkbox" type="checkbox" />{" "}
@@ -93,14 +93,14 @@ function App() {
             <div className="image-card">
               <h5>
                 {" "}
-                "we have been using untitled to kick start every new project and
+                "we've been using Untitled to kick start every new project and
                 can't imagine working without it."{" "}
               </h5>
 
               <div className="image-footer-1st-layer d-flex justify-content-between align-items-center">
                 <div className="">
                   {" "}
-                  <h2>Andie Lane</h2>{" "}
+                  <h2  className="image-card-h2" >Andi Lane</h2>{" "}
                 </div>
                 <div className="stars">
                   <div className="star">
@@ -129,13 +129,13 @@ function App() {
               <div className="image-footer-2nd-layer d-flex justify-content-between align-items-center">
                 <div className="d-flex flex-column">
                   {" "}
-                  <p className="image-paragraph">Founder Catalogue</p>{" "}
+                  <p className="image-paragraph normal">Founder , Catalog</p>{" "}
                   <p className="image-paragraph"> Web Design Agency</p>{" "}
                 </div>
                 <div className="signs d-flex justify-content-between align-items-center">
                   {" "}
-                  <div className="prev"> prev </div>
-                  <div className="next">next</div>{" "}
+                  <div className="prev"> <FaArrowLeft/> </div>
+                  <div className="next">  <FaArrowRight/> </div>{" "}
                 </div>
               </div>
             </div>
