@@ -145,7 +145,7 @@ a {
   background: whitesmoke;
   padding: 1rem 2rem;
   background: transparent;
-  filter: blur(0.7px);
+  filter: blur(0.8px);
   color:white;
   border:0.2px solid white ;
   z-index: 1;
