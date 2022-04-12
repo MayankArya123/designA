@@ -145,16 +145,16 @@ a {
   background: whitesmoke;
   padding: 1rem 2rem;
   background: transparent;
-  filter: blur(0.8px);
+  filter: blur(0.6px);
   color:white;
-  border:0.2px solid white ;
+  border:1px solid white ;
   z-index: 1;
 }
 
 .image-box {
   width: 100%;
   height: 100%;
-  background: url("./Images/libraryImage.jpg");
+  background: url("./Images/bg.jpeg");
   background-size: 100% 100%;
 
 }
@@ -167,6 +167,7 @@ a {
   font-size: 1.6rem;
   margin-bottom: 1rem;
   margin-top: 0.1rem;
+  font-weight: 600;
 }
 
 .image-box .image-footer-2nd-layer .signs {
